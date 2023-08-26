@@ -1,0 +1,15 @@
+{
+  "name": "perguntas",
+  "version": "1.0.0",
+  "description": "Projeto prático \"Formação NodeJs\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Demétrio Atra",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
