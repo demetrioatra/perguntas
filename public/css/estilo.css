@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eceff1;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 500px;
+}
+
+nav {
+    display: flex;
+    gap: 10%;
+}
+
+footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
