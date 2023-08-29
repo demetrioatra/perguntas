@@ -26,3 +26,9 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -3,17 +3,16 @@
 <%- include ('partials/links.ejs') %>
     <%- include ('partials/header.ejs') %>    
     <div class="container">      
-        <div class="card">
-            <div class="card-header">
-                <h2>Lista de Perguntas</h2>
-            </div>  
+        <div class="titulo">
+            <h2>Lista de Perguntas</h2>
+            <a class="btn btn-primary" href="/publicar">Fazer uma pergunta</a>
         </div>
         <% perguntas.forEach(function(pergunta) { %>
-            <div class="container card">
-                <h4><%= pergunta.titulo %></h4> 
-                <p><%= pergunta.descricao %></p>
-            </div>
-            <br>
+        <br>
+        <div class="container card">
+            <h4><%= pergunta.titulo %></h4> 
+            <p><%= pergunta.descricao %></p>
+        </div>
         <% }) %>
     </div>
     <%- include ('partials/footer.ejs') %>

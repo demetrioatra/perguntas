@@ -1,8 +1,8 @@
 const express = require("express")
 const app = express();
 const bodyParser = require("body-parser")
-const conexao = require("./banco/dados")
-const Pergunta = require("./banco/Pergunta")
+const conexao = require("./database/dados")
+const Pergunta = require("./database/Pergunta")
 
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended:false }))
