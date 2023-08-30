@@ -22,7 +22,9 @@ app.get("/", (req, res) => {
 })
 
 app.get("/:categoria/:pergunta", (req, res) => {
-    Pergunta.findAll({raw: true}).then((perguntas) => {
+    Pergunta.findAll({raw: true, order: [
+       ['id', 'DESC']
+    ]}).then((perguntas) => {
         res.render("perguntas", {
             perguntas: perguntas
         })
