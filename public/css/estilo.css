@@ -40,3 +40,8 @@ footer {
 .main {
     margin-top: 15vh;
 }
+
+.reduzido {
+    padding: 15px;
+    min-height: 75px;
+}

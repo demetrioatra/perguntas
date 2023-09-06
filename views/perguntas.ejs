@@ -3,17 +3,20 @@
 <%- include ('partials/links.ejs') %>
     <%- include ('partials/header.ejs') %>    
     <div class="container main">      
+
         <div class="titulo">
             <h2>Lista de Perguntas</h2>
             <a class="btn btn-primary" href="/publicar">Fazer uma pergunta</a>
         </div>
+        
         <% perguntas.forEach(function(pergunta) { %>
         <br><br>
-        <div class="container card">
+        <div class="container card reduzido">
             <h4><%= pergunta.titulo %></h4> 
         </div>
-        <a class="btn btn-primary" href="/">Responder</a>
+        <a class="btn btn-primary" href="/pergunta/<%= pergunta.id %>">Responder</a>
         <% }) %>
+
     </div>
     <%- include ('partials/footer.ejs') %>
 <%- include ('partials/scripts.ejs') %>
